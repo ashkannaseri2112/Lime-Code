@@ -45,7 +45,9 @@
     <!-- List Menu -->
     <header>
       <div class="container">
-        <div class="flex justify-between items-center h-32 sm:h-[150px] gap-x-6">
+        <div
+          class="flex justify-between items-center h-32 sm:h-[150px] gap-x-6"
+        >
           <h2 class="text-[28px] font-PoppinsBlack">
             Lime<span class="text-green-350">Code</span>
           </h2>
@@ -68,26 +70,35 @@
             </svg>
           </a>
           <!-- Mobile Menu -->
-          <svg class="w-6 h-6 text-green-350">
-            <use href="#bars-menu"></use>
-          </svg>
-          <div
-            class="absolute h-full top-0 left-0 w-56  p-5 bg-gray-700/60 backdrop-blur-lg  bottom-0">
-            <h2 class="text-[28px] font-PoppinsBlack">
-              Lime<span class="text-green-350">Code</span>
-            </h2>
-            <ul class="flex flex-col gap-y-5 mt-5">
-             <li><a href="#">Beranda</a></li>
-             <li><a href="#">Kelas</a></li>
-             <li><a href="#">Alur Belajur</a></li>
-             <li><a href="#">Event</a></li>
-             <li><a href="#">Blog</a></li>
-             <li><a href="#">Contact</a></li> 
-            </ul>
-            <button class="mt-11 bg-green-350 text-black w-28 h-11 font-PoppinsSemibold rounded text-xl" href="#">Register</button>
-        </div>
+          <div class="flex sm:hidden">
+            <svg class="w-6 h-6 text-green-350">
+              <use href="#bars-menu"></use>
+            </svg>
+            <div
+              class="absolute h-full top-0 left-0 w-56 p-5 bg-gray-700/60 backdrop-blur-lg bottom-0"
+            >
+              <h2 class="text-[28px] font-PoppinsBlack">
+                Lime<span class="text-green-350">Code</span>
+              </h2>
+              <ul class="flex flex-col gap-y-5 mt-5">
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Kelas</a></li>
+                <li><a href="#">Alur Belajur</a></li>
+                <li><a href="#">Event</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+              <button
+                class="mt-11  bg-green-350 text-black w-28 h-11 font-PoppinsSemibold rounded text-xl"
+                href="#"
+              >
+                Register
+              </button>
+            </div>
+          </div>   
         </div>
       </div>
     </header>
+    <div class="overlay fixed max-h-screen w-full bg-white"></div>
   </body>
 </html>

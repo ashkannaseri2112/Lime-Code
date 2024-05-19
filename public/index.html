@@ -70,17 +70,17 @@
             </svg>
           </a>
           <!-- Mobile Menu -->
-          <div class="flex sm:hidden">
-            <svg class="w-6 h-6 text-green-350">
+          <div class="flex sm:hidden ">
+            <svg id="bars" class="w-6 h-6 text-green-350">
               <use href="#bars-menu"></use>
             </svg>
             <div
-              class="absolute h-full top-0 left-0 w-56 p-5 bg-gray-700/60 backdrop-blur-lg bottom-0"
+              class="absolute z-30 h-full top-0 -left-56 transition-all w-56 p-5 bg-gray-700/60 backdrop-blur-lg bottom-0"
             >
               <h2 class="text-[28px] font-PoppinsBlack">
                 Lime<span class="text-green-350">Code</span>
               </h2>
-              <ul class="flex flex-col gap-y-5 mt-5">
+              <ul id="navMenu" class="flex flex-col gap-y-5 mt-5">
                 <li><a href="#">Beranda</a></li>
                 <li><a href="#">Kelas</a></li>
                 <li><a href="#">Alur Belajur</a></li>
@@ -99,6 +99,6 @@
         </div>
       </div>
     </header>
-    <div class="overlay fixed max-h-screen w-full bg-white"></div>
+    <div id="overlay" class="overlay hidden top-0 h-full w-full z-20 bg-gray-500/40 sm:hidden"></div>
   </body>
 </html>

@@ -30,10 +30,28 @@
   }
 }
 
-@layer utilities{
-  .flex-center{
+@layer components {
+}
+
+@layer utilities {
+  .flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .active {
+    @apply  text-green-350 relative;
+  }
+  .active::after {
+    @apply absolute -bottom-2 left-0 right-0 mx-auto bg-green-350 rounded-md w-6 h-1;
+    content:"";
+  }
+  
+  .activeMobile{
+    @apply ml-5 text-green-350 relative;
+  }
+  .activeMobile::before{
+    @apply absolute -left-6 top-0 bottom-0 my-auto  bg-green-350 rounded-md w-4 h-1;
+    content:"";
   }
 }

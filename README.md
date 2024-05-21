@@ -3,7 +3,7 @@
 
 This project is a type of introduction and support site for all kinds of programming languages and provides all kinds of services you need
 
-![LimeCode](./images/README_File/LimeCode.png)
+![LimeCode](/public/images/README_File/LimeCode.png)
 
 ## Badges
 

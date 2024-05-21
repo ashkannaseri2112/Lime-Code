@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/public/styles/app.css" />
     <link rel="stylesheet" href="/public/src/input.css" />
   </head>
-  <body class="bg-black text-white font-Poppins overflow-x-hidden">
+  <body class="bg-black text-white font-Poppins overflow-x-hidden capitalize">
     <!-- All App Icons -->
     <svg class="hidden">
       <symbol
@@ -40,6 +40,20 @@
           d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
         />
       </symbol>
+      <symbol
+        id="chevron-right"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m8.25 4.5 7.5 7.5-7.5 7.5"
+        />
+      </symbol>
     </svg>
     <!-- NavMenu -->
     <header>
@@ -51,7 +65,9 @@
             Lime<span class="text-green-350">Code</span>
           </h2>
           <!-- NavMenu - Desktop -->
-          <ul class="hidden md:flex gap-x-4 md:gap-x-8 flex-wrap child-hover:text-green-350">
+          <ul
+            class="hidden md:flex gap-x-4 md:gap-x-8 flex-wrap child-hover:text-green-350"
+          >
             <li class="menu-item active"><a href="#">Beranda</a></li>
             <li class="menu-item"><a href="#">Klas</a></li>
             <li class="menu-item"><a href="#">Alur Belajur</a></li>
@@ -60,7 +76,7 @@
             <li class="menu-item"><a href="#">Contact</a></li>
           </ul>
           <a
-            class="w-[174px] transition-colors hover:bg-[#D9D9D9]  hidden h-[54px] rounded text-black bg-green-350 lg:flex-center gap-x-2 text-xl font-PoppinsSemibold"
+            class="w-[174px] transition-colors hover:bg-[#D9D9D9] hidden h-[54px] rounded text-black bg-green-350 lg:flex-center gap-x-2 text-xl font-PoppinsSemibold"
             href="#"
           >
             Register
@@ -69,18 +85,21 @@
             </svg>
           </a>
           <!-- Mobile Menu -->
-          <div class="flex md:hidden ">
+          <div class="flex md:hidden">
             <svg id="bars" class="w-6 h-6 text-green-350">
               <use href="#bars-menu"></use>
             </svg>
             <div
-            id="navMenu"  class="absolute z-30 h-full top-0 -left-56 transition-all w-56 p-5 bg-gray-700/60 backdrop-blur-lg bottom-0"
+              id="navMenu"
+              class="absolute z-30 h-full top-0 -left-56 transition-all w-56 p-5 bg-gray-700/60 backdrop-blur-lg bottom-0"
             >
               <h2 class="text-[28px] font-PoppinsBlack">
                 Lime<span class="text-green-350">Code</span>
               </h2>
-              <ul  class="flex flex-col gap-y-5 mt-5">
-                <li class="menu-item__mobile activeMobile"><a href="#">Beranda</a></li>
+              <ul class="flex flex-col gap-y-5 mt-5">
+                <li class="menu-item__mobile activeMobile">
+                  <a href="#">Beranda</a>
+                </li>
                 <li class="menu-item__mobile"><a href="#">Kelas</a></li>
                 <li class="menu-item__mobile"><a href="#">Alur Belajur</a></li>
                 <li class="menu-item__mobile"><a href="#">Event</a></li>
@@ -88,17 +107,68 @@
                 <li class="menu-item__mobile"><a href="#">Contact</a></li>
               </ul>
               <button
-                class="mt-11  bg-green-350 text-black w-28 h-11 font-PoppinsSemibold rounded text-xl"
+                class="mt-11 bg-green-350 text-black w-28 h-11 font-PoppinsSemibold rounded text-xl"
                 href="#"
               >
                 Register
               </button>
             </div>
-          </div>   
+          </div>
         </div>
       </div>
     </header>
-    <div id="overlay" class=" top-0 h-full w-full z-20 bg-gray-500/40 md:hidden"></div>
+    <main>
+      <!-- HomePage -->
+      <div class="container">
+        <div class="HomePage relative flex justify-between mt-16 items-center">
+          <div class="flex flex-col gap-y-9">
+            <span class="text-green-350 font-PoppinsSemibold text-xl"
+              >#Janganmalas</span
+            >
+            <h1 class="font-PoppinsBold text-[68px]">
+              Lime <span class="text-green-350">Code</span> Belajar Coding
+              Simpel.
+            </h1>
+            <p class="max-w-[502px] text-xl capitalize leading-[40px]">
+              ayo pelajari skill baru sesuai dengan minatmu. kumpulan kelas
+              coding gratis tentang html, css, javascript, php, laravel, python,
+              go-lang, dll.
+            </p>
+            <a
+              class="mt-10 text-black w-[252px] h-[63px] bg-green-350 flex-center gap-x-4 rounded-md font-PoppinsBold text-xl"
+              href="#"
+            >
+              Mulai sekarang
+              <svg class="w-6 h-6 text-black">
+                <use href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div
+            class="bg-homePage-Img bg-no-repeat w-[1000px] h-[462px] rounded-md relative"
+          >
+            <div
+              class="bg-[#D9D9D9] w-[275px] text-black h-[150px] z-20 shadow-md rounded-[4px] flex flex-col  items-center  pt-8 absolute bottom-5 -left-24"
+            >
+              <h5 class="font-PoppinsBold text-xl">
+                <p class="-mx-6 -mb-2 font-PoppinsSemibold text-[40px]/[4px]">“</p>
+                ngoding itu mudah
+              </h5>
+              <span class="w-44 mx-auto mt-3">yang susah itu kamu malas memulainya.
+                <p class="font-PoppinsSemibold text-[40px] ml-44 -mt-6">“</p>
+              </span>
+            </div>
+          </div>
+          <span
+            class="rounded-full absolute bg-green-350/35 blur-3xl w-[420px] h-[420px] top-0 -left-[317px]"
+          ></span>
+        </div>
+      </div>
+    </main>
+    <div
+      id="overlay"
+      class="top-0 h-full w-full z-20 bg-gray-500/40 md:hidden"
+    ></div>
     <script src="/public/scripts/app.js"></script>
   </body>
 </html>

@@ -31,14 +31,6 @@
 }
 
 @layer components {
-}
-
-@layer utilities {
-  .flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   .active {
     @apply text-green-350 relative;
   }
@@ -57,4 +49,17 @@
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
       url("/public/images/Home.png");
   }
+  .support::after{
+    @apply w-[420px] h-[420px] hidden lg:block absolute bg-green-350/50 blur-3xl -right-72  -top-32 rounded-full ;
+    content:"";
+  }
+}
+
+@layer utilities {
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 }

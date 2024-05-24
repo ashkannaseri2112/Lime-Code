@@ -10,6 +10,7 @@ module.exports = {
       },
       backgroundImage: {
         "homePage-Img": "url(/public/images/Home.png)",
+        "join-img":"url(/public/images/Join-img.png)"
       },
     },
     screens: {

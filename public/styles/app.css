@@ -602,6 +602,12 @@ video {
   padding-left: 1rem;
 }
 
+@media (min-width: 450px) {
+  .container {
+    max-width: 450px;
+  }
+}
+
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
@@ -695,8 +701,24 @@ video {
   }
 }
 
-.support::after{
-  content:"";
+.support::after {
+  content: "";
+}
+
+.tehcnology-item {
+  margin-left: auto;
+  margin-right: auto;
+  height: 120px;
+  width: 190px;
+  gap: 0.5rem;
+  border-radius: 0.375rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(217 217 217 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .fixed {
@@ -795,6 +817,10 @@ video {
   margin-top: 5rem;
 }
 
+.mt-28 {
+  margin-top: 7rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -816,13 +842,6 @@ video {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
-}
-
-.line-clamp-2 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
 }
 
 .flex {
@@ -885,6 +904,10 @@ video {
   height: 54px;
 }
 
+.h-\[55px\] {
+  height: 55px;
+}
+
 .h-\[58px\] {
   height: 58px;
 }
@@ -893,12 +916,12 @@ video {
   height: 63px;
 }
 
-.h-full {
-  height: 100%;
+.h-\[741px\] {
+  height: 741px;
 }
 
-.h-\[300px\] {
-  height: 300px;
+.h-full {
+  height: 100%;
 }
 
 .min-h-28 {
@@ -969,8 +992,8 @@ video {
   width: 275px;
 }
 
-.w-\[613px\] {
-  width: 613px;
+.w-\[55px\] {
+  width: 55px;
 }
 
 .w-full {
@@ -979,10 +1002,6 @@ video {
 
 .max-w-\[220px\] {
   max-width: 220px;
-}
-
-.max-w-\[350px\] {
-  max-width: 350px;
 }
 
 .max-w-\[502px\] {
@@ -995,6 +1014,10 @@ video {
 
 .max-w-\[539px\] {
   max-width: 539px;
+}
+
+.max-w-\[563px\] {
+  max-width: 563px;
 }
 
 .transform {
@@ -1019,6 +1042,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-3 {
+  gap: 0.75rem;
 }
 
 .gap-5 {
@@ -1058,6 +1085,10 @@ video {
   row-gap: 2.5rem;
 }
 
+.gap-y-2 {
+  row-gap: 0.5rem;
+}
+
 .gap-y-4 {
   row-gap: 1rem;
 }
@@ -1088,6 +1119,11 @@ video {
 
 .rounded-md {
   border-radius: 0.375rem;
+}
+
+.bg-\[\#120F0E\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(18 15 14 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#1B1715\] {
@@ -1146,6 +1182,11 @@ video {
 .py-11 {
   padding-top: 2.75rem;
   padding-bottom: 2.75rem;
+}
+
+.py-28 {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
 }
 
 .py-7 {
@@ -1221,6 +1262,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .capitalize {
   text-transform: capitalize;
 }
@@ -1284,13 +1330,6 @@ video {
   background-color: rgb(217 217 217 / var(--tw-bg-opacity));
 }
 
-.child\:line-clamp-1 > * {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-}
-
 .child\:h-\[210px\] > * {
   height: 210px;
 }
@@ -1313,6 +1352,12 @@ video {
   color: rgb(132 204 22 / var(--tw-text-opacity));
 }
 
+@media (min-width: 450px) {
+  .xs\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:mt-10 {
     margin-top: 2.5rem;
@@ -1320,13 +1365,6 @@ video {
 
   .sm\:mt-20 {
     margin-top: 5rem;
-  }
-
-  .sm\:line-clamp-none {
-    overflow: visible;
-    display: block;
-    -webkit-box-orient: horizontal;
-    -webkit-line-clamp: none;
   }
 
   .sm\:h-\[150px\] {
@@ -1343,6 +1381,10 @@ video {
 
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .sm\:gap-y-9 {
@@ -1369,6 +1411,10 @@ video {
     position: absolute;
   }
 
+  .md\:mt-48 {
+    margin-top: 12rem;
+  }
+
   .md\:line-clamp-none {
     overflow: visible;
     display: block;
@@ -1386,10 +1432,6 @@ video {
 
   .md\:h-\[300px\] {
     height: 300px;
-  }
-
-  .md\:h-\[513px\] {
-    height: 513px;
   }
 
   .md\:w-\[420px\] {
@@ -1413,8 +1455,8 @@ video {
          column-gap: 2rem;
   }
 
-  .md\:text-\[40px\] {
-    font-size: 40px;
+  .md\:text-left {
+    text-align: left;
   }
 }
 
@@ -1445,16 +1487,16 @@ video {
     width: 850px;
   }
 
+  .lg\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
 
   .lg\:text-left {
     text-align: left;
-  }
-
-  .lg\:text-\[40px\] {
-    font-size: 40px;
   }
 
   .lg\:flex-center {
@@ -1480,5 +1522,9 @@ video {
 
   .xl\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .xl\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 }

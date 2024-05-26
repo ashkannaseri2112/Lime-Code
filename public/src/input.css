@@ -56,6 +56,12 @@
   .tehcnology-item {
     @apply w-[190px] h-[120px] bg-[#D9D9D9] rounded-md flex-center text-black gap-2 mx-auto;
   }
+  .kelas-describe{
+  @apply w-full absolute bottom-10 left-0 sm:pt-7 px-7 bg-[#D9D9D9]/[50%] backdrop-blur-sm
+  }
+  .kelas-score{
+    @apply flex justify-between
+  }
 }
 
 @layer utilities {

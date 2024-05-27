@@ -115,7 +115,7 @@ arrayTec.map(function (lang) {
 });
 
 kelasArray.map(function(box){
-  kelasContainer.insertAdjacentHTML('beforeend',` <div class="kelas-box max-w-[400px] h-[535px]">
+  kelasContainer.insertAdjacentHTML('beforeend',` <div class="kelas-box w-5/6 mx-auto md:max-w-[400px] h-[535px]">
   <div
     class=" h-[315px] bg-[#D9D9D9] relative rounded-md px-9 py-9"
   >

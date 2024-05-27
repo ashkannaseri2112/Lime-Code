@@ -62,6 +62,9 @@
   .kelas-score{
     @apply flex justify-between
   }
+  .develop{
+    background: linear-gradient(90deg,rgba(0,0,0),rgba(0,0,0,0)),url(/public/images/Develop2.png);
+  }
 }
 
 @layer utilities {

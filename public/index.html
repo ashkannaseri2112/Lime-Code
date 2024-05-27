@@ -130,7 +130,7 @@
             width="22.2245"
             height="24.6939"
             transform="translate(0.11438 0.481689)"
-            fill="black"
+            fill="none"
           />
           <path
             d="M19.9577 2.02502H2.49557C1.18096 2.02502 0.11438 3.06197 0.11438 4.34007V21.3171C0.11438 22.5952 1.18096 23.6322 2.49557 23.6322H19.9577C21.2723 23.6322 22.3389 22.5952 22.3389 21.3171V4.34007C22.3389 3.06197 21.2723 2.02502 19.9577 2.02502ZM17.5318 9.68398C17.5417 9.81902 17.5417 9.95889 17.5417 10.0939C17.5417 14.2755 14.2676 19.0937 8.28485 19.0937C6.43942 19.0937 4.72794 18.5728 3.2893 17.6757C3.55223 17.7047 3.80523 17.7143 4.07311 17.7143C5.59609 17.7143 6.99504 17.2127 8.11122 16.3639C6.68251 16.3349 5.48199 15.4234 5.07024 14.1694C5.57128 14.2417 6.02272 14.2417 6.53864 14.1115C5.0504 13.8173 3.93421 12.544 3.93421 11.0055V10.9669C4.3658 11.2032 4.87181 11.3479 5.40261 11.3672C4.95635 11.0786 4.59052 10.6871 4.33776 10.2276C4.085 9.76811 3.95318 9.25493 3.95405 8.73385C3.95405 8.14544 4.1128 7.60526 4.39557 7.13743C5.99791 9.05699 8.40391 10.311 11.1026 10.446C10.6412 8.29977 12.2932 6.55866 14.2775 6.55866C15.2151 6.55866 16.0585 6.93968 16.6538 7.55703C17.388 7.42198 18.0924 7.15672 18.7175 6.79499C18.4744 7.52809 17.9634 8.14544 17.2887 8.5361C17.9436 8.46858 18.5786 8.29013 19.1639 8.04415C18.7224 8.67597 18.1668 9.23544 17.5318 9.68398Z"
@@ -542,16 +542,20 @@
       <!-- Develop -->
       <div class="container">
         <div
-          class="py-7 px-12  w-5/6 mx-auto lg:px-20 develop border-2 border-green-350 rounded-lg my-14 md:my-28 md:w-full lg:h-[210px] bg-no-repeat"
+          class="py-7 px-12 w-5/6 mx-auto lg:px-20 develop border-2 border-green-350 rounded-lg my-14 md:my-28 md:w-full lg:h-[210px] bg-no-repeat"
         >
-          <div class="flex flex-col gap-y-3 md:flex-row justify-between items-center gap-x-5">
-            <h4 class="max-w-[505px] line-clamp-2 lg:line-clamp-none text-[25px] lg:text-[32px] font-PoppinsBold">
+          <div
+            class="flex flex-col gap-y-3 md:flex-row justify-between items-center gap-x-5"
+          >
+            <h4
+              class="max-w-[505px] line-clamp-2 lg:line-clamp-none text-[25px] lg:text-[32px] font-PoppinsBold"
+            >
               tunggu apa lagi ayo bangun karir kamu sebagai developer
               profesional
             </h4>
             <a
               href="#"
-              class="max-w-[310px] line-clamp-1 lg:h-[63px]  lg:text-xl lg:gap-x-4 font-PoppinsSemibold p-2 bg-green-350 rounded-md flex-center text-black"
+              class="max-w-[310px] line-clamp-1 lg:h-[63px] lg:text-xl lg:gap-x-4 font-PoppinsSemibold p-2 bg-green-350 rounded-md flex-center text-black"
               >buat akun sekarang
               <svg class="w-5 h-5"><use href="#chevron-right"></use></svg>
             </a>
@@ -559,6 +563,104 @@
         </div>
       </div>
     </main>
+    <footer class="w-full  bg-[#120F0E]">
+      <div class="container">
+        <div class=" py-24 px-20">
+          <div class="flex text-center md:text-left justify-between items-end flex-wrap gap-y-8">
+            <div>
+              <h4 class="font-PoppinsBlack text-[38px]">LimeCode</h4>
+              <p class="max-w-[237px] mb-8">Lime Code Belajar Coding Simpel.</p>
+              <div class="flex flex-col items-start gap-y-5">
+                <span class="text-left text-[15px] flex-center gap-x-3 ">
+                  <svg class="w-6 h-6">
+                    <use href="#map-icon"></use>
+                  </svg>
+                  Jl. Adama Makassar, Indonesia
+                </span>
+                <span class="text-left text-[15px] flex-center gap-x-3 ">
+                  <svg class="w-6 h-6">
+                    <use href="#phone"></use>
+                  </svg>
+                  +62 8234-3432-4235
+                </span>
+                <span class="text-left text-[15px] flex-center gap-x-3 ">
+                  <svg class="w-6 h-6">
+                    <use href="#envelope"></use>
+                  </svg>
+                  meduplife@gmail.com
+                </span>
+              </div>
+            </div>
+            <div>
+              <h5 class="font-PoppinsBlack text-[28px]">stay update to our newsletter</h5>
+              <div class="flex mt-12 child:mx-auto gap-x-2 gap-y-4 flex-wrap">
+                <input placeholder="enter your email address " class="font-PoppinsRegular px-4 text-black max-w-[292px] h-[60px] rounded-[10px]" type="text" name="" id="">
+                 <button class="bg-green-350 text-black font-PoppinsBold w-[174px] h-[60px] rounded-lg">
+                  Subscribe
+                 </button>
+              </div>
+            </div>
+          </div>
+          <div class=" w-5/6 mx-auto md:w-full  flex-wrap py-3 text-center md:text-left gap-y-4 bg-green-350 mt-16 md:px-10 rounded-lg text-black flex justify-between items-center ">
+             <p class="text-xl">Dibuat Oleh <span class="font-PoppinsBold">Syahrul Saleh</span>, Menggunakan Tailwind css dan Js. <span class="font-PoppinsBold">@2024</span></p>
+             <ul class="social-icons flex mx-auto xl:mx-0 gap-x-2 z-30">
+              <li>
+                <a href="#">
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1_236)">
+                    <rect width="21.2367" height="21.2367" transform="translate(0 0.457275)"/>
+                    <path d="M3.8777 0.457275C1.72962 0.457275 0 2.1869 0 4.33497V17.8163C0 19.9644 1.72962 21.694 3.8777 21.694H11.1845V13.3918H8.98912V10.4027H11.1845V7.84899C11.1845 5.84265 12.4816 4.00049 15.4696 4.00049C16.6794 4.00049 17.5741 4.11664 17.5741 4.11664L17.5037 6.90795C17.5037 6.90795 16.5913 6.89933 15.5957 6.89933C14.5182 6.89933 14.3454 7.3958 14.3454 8.22V10.4027H17.5893L17.448 13.3918H14.3454V21.694H17.359C19.5071 21.694 21.2367 19.9644 21.2367 17.8163V4.33499C21.2367 2.18692 19.5071 0.457297 17.359 0.457297H3.87768L3.8777 0.457275Z" fill="black"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_1_236">
+                    <rect width="21.2367" height="21.2367" fill="white" transform="translate(0 0.457275)"/>
+                    </clipPath>
+                    </defs>
+                    </svg>     
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg width="23" height="26" viewBox="0 0 23 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1_238)">
+                    <rect width="22.2245" height="24.6939" transform="translate(0.11438 0.481689)"/>
+                    <path d="M19.9577 2.02515H2.49557C1.18096 2.02515 0.11438 3.0621 0.11438 4.3402V21.3172C0.11438 22.5953 1.18096 23.6323 2.49557 23.6323H19.9577C21.2723 23.6323 22.3389 22.5953 22.3389 21.3172V4.3402C22.3389 3.0621 21.2723 2.02515 19.9577 2.02515ZM17.5318 9.6841C17.5417 9.81915 17.5417 9.95901 17.5417 10.0941C17.5417 14.2756 14.2676 19.0938 8.28485 19.0938C6.43942 19.0938 4.72794 18.5729 3.2893 17.6758C3.55223 17.7048 3.80523 17.7144 4.07311 17.7144C5.59609 17.7144 6.99504 17.2128 8.11122 16.364C6.68251 16.335 5.48199 15.4235 5.07024 14.1695C5.57128 14.2419 6.02272 14.2419 6.53864 14.1116C5.0504 13.8174 3.93421 12.5442 3.93421 11.0056V10.967C4.3658 11.2034 4.87181 11.348 5.40261 11.3673C4.95635 11.0787 4.59052 10.6872 4.33776 10.2277C4.085 9.76823 3.95318 9.25505 3.95405 8.73397C3.95405 8.14556 4.1128 7.60538 4.39557 7.13755C5.99791 9.05711 8.40391 10.3111 11.1026 10.4461C10.6412 8.2999 12.2932 6.55878 14.2775 6.55878C15.2151 6.55878 16.0585 6.9398 16.6538 7.55715C17.388 7.42211 18.0924 7.15684 18.7175 6.79511C18.4744 7.52821 17.9634 8.14556 17.2887 8.53622C17.9436 8.4687 18.5786 8.29025 19.1639 8.04428C18.7224 8.67609 18.1668 9.23556 17.5318 9.6841Z" fill="black"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_1_238">
+                    <rect width="22.2245" height="24.6939" fill="white" transform="translate(0.11438 0.481689)"/>
+                    </clipPath>
+                    </defs>
+                  </svg>  
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.3287 10.4109C12.3108 10.4109 10.6641 12.0576 10.6641 14.0755C10.6641 16.0933 12.3108 17.7401 14.3287 17.7401C16.3465 17.7401 17.9932 16.0933 17.9932 14.0755C17.9932 12.0576 16.3465 10.4109 14.3287 10.4109ZM25.3196 14.0755C25.3196 12.558 25.3334 11.0542 25.2482 9.53943C25.1629 7.77999 24.7616 6.21849 23.475 4.9319C22.1856 3.64257 20.6269 3.24394 18.8674 3.15872C17.3499 3.0735 15.8462 3.08724 14.3314 3.08724C12.8139 3.08724 11.3101 3.0735 9.79535 3.15872C8.03591 3.24394 6.47441 3.64531 5.18782 4.9319C3.89849 6.22124 3.49986 7.77999 3.41464 9.53943C3.32942 11.0569 3.34316 12.5607 3.34316 14.0755C3.34316 15.5902 3.32942 17.0968 3.41464 18.6115C3.49986 20.371 3.90124 21.9325 5.18782 23.2191C6.47716 24.5084 8.03591 24.907 9.79535 24.9922C11.3129 25.0775 12.8166 25.0637 14.3314 25.0637C15.8489 25.0637 17.3527 25.0775 18.8674 24.9922C20.6269 24.907 22.1884 24.5056 23.475 23.2191C24.7643 21.9297 25.1629 20.371 25.2482 18.6115C25.3361 17.0968 25.3196 15.593 25.3196 14.0755ZM14.3287 19.7139C11.2084 19.7139 8.6902 17.1957 8.6902 14.0755C8.6902 10.9552 11.2084 8.43703 14.3287 8.43703C17.4489 8.43703 19.9671 10.9552 19.9671 14.0755C19.9671 17.1957 17.4489 19.7139 14.3287 19.7139ZM20.198 9.52294C19.4695 9.52294 18.8812 8.93462 18.8812 8.20611C18.8812 7.47759 19.4695 6.88928 20.198 6.88928C20.9265 6.88928 21.5149 7.47759 21.5149 8.20611C21.5151 8.3791 21.4812 8.55043 21.4151 8.71029C21.349 8.87016 21.252 9.01541 21.1296 9.13773C21.0073 9.26005 20.8621 9.35704 20.7022 9.42314C20.5423 9.48924 20.371 9.52315 20.198 9.52294Z" fill="black"/>
+                  </svg>                    
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1_242)">
+                    <path d="M13.1592 3.94116C0.539221 3.94116 0.318359 5.06345 0.318359 13.8286C0.318359 22.5937 0.539221 23.716 13.1592 23.716C25.7791 23.716 26 22.5937 26 13.8286C26 5.06345 25.7791 3.94116 13.1592 3.94116ZM17.2746 14.2575L11.5091 16.9489C11.0045 17.1826 10.591 16.9207 10.591 16.3634V11.2938C10.591 10.7378 11.0045 10.4746 11.5091 10.7083L17.2746 13.3997C17.7793 13.636 17.7793 14.0212 17.2746 14.2575Z" fill="black"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_1_242">
+                    <rect width="25.6816" height="25.6816" fill="white" transform="translate(0.318359 0.987793)"/>
+                    </clipPath>
+                    </defs>
+                  </svg>       
+                </a>
+              </li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <div
       id="overlay"
       class="top-0 h-full w-full z-20 bg-gray-500/40 md:hidden"
